@@ -1,0 +1,15 @@
+Explanation of the fields:
+-page – Current page of the results
+-results – Array of movies
+-id – Unique movie ID
+-title – Movie title
+-overview – Short description of the movie
+-release_date – Release date (YYYY-MM-DD)
+-poster_path – Path to the movie poster
+-backdrop_path – Path to the movie backdrop image
+-vote_average – Average user rating
+-vote_count – Total number of votes
+-original_language – Original language of the movie
+-genre_ids – List of genre IDs
+-total_pages – Total number of pages in the result
+-total_results – Total number of movies found

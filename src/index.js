@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import StyledGlobal from './styledGlobal';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './common/utils/theme';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { routes } from './routes/routes';
+import { Provider } from 'react-redux';
+import store from './store';
+
+
+const router = createHashRouter(routes)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <StyledGlobal />
+        {/* <App /> */}
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>
 );
 

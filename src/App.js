@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { Outlet } from "react-router-dom";
+import Header from "./common/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Moja aplikacja
-      </header>
-    </div>
+    <>
+      <Header />
+      <Outlet />
+    </>
   );
 }
 
