@@ -1,21 +1,15 @@
 import styled from "styled-components";
 
-export const Top = styled.div`
+export const Wrapper = styled.div`
   position: relative;
-  width: 100vw;
   width: 100%;
   margin: 0px;
   background-color: ${({ theme }) => theme.colors.black};
 `;
 
-export const StyledWrapper = styled.div`
-  width: min(1368px, 100%);
-  margin-inline: auto;
-  position: relative;
-`;
-
 export const ImgBig = styled.img`
   width: 100%;
+  max-height: 770px;
 `;
 
 export const Vignette = styled.div`
@@ -34,30 +28,48 @@ export const Vignette = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-    margin-block-end: 56px;
+  margin-bottom: 56px;
+  margin-left: 276px;
 
-    @media (width < 1392px) {
-      padding-inline-start: 24px;
-    }
-
-    @media (width < 1024px){
-      margin-block-end: clamp(0.5rem, -0.8636rem + 6.8182vw, 3.5rem);
-    }
-
-    @media (width < 767px) {
-      padding-inline-start: 16px;
-    }
+  @media(max-width: ${({ theme }) => theme.breakpoints.laptopMax}px) {
+    margin-bottom: 48px;
+    margin-left: 192px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
+    margin-bottom: 32px;
+    margin-left: 128px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    margin-bottom: 24px;
+    margin-left: 96px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    margin-bottom: 16px;
+    margin-left: 48px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileVerticalMax}px) {
+    margin-bottom: 8px;
+    margin-left: 16px;
+  }
 `;
 
 export const Title = styled.h1`
-  font-size: 64px;
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
+  font-size: 64px;
   line-height: 1.2;
-  margin: 0px 0px 24px;
+  margin: 0;
 
-  @media (width < 1024px){
-    font-size: clamp(1.5rem, 0.3636rem + 5.6818vw, 4rem);
-    margin-block-end: clamp(0.25rem, -0.3182rem + 2.8409vw, 1.5rem);
+  @media(max-width: ${({ theme }) => theme.breakpoints.laptopMax}px) {
+    font-size: 56px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
+    font-size: 48px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    font-size: 32px;
+  }
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    font-size: 24px;
   }
 `;
