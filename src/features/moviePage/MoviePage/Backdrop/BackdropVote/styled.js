@@ -4,7 +4,7 @@ import { ReactComponent as StarIcon } from "./star.svg";
 export const Wrapper = styled.div`
   margin: 24px 0px 0px 0px;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   font-size: 14px;
   color: ${({ theme }) => theme.colors.white};
@@ -69,7 +69,7 @@ export const Count = styled.p`
   font-weight: 400;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-    flex: 1 1 0%;
+    flex-basis: auto;
     margin: 0 0 0 8px;
   }
 `;
