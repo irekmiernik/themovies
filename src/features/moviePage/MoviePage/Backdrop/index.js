@@ -23,6 +23,5 @@ export const Backdrop = () => {
         </TitleWrapper>
       </Vignette>
     </Wrapper>
-
   );
 };
