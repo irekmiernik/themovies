@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/themovies/static/js/main.98061a22.js",
+    "static/js/453.dc5d1cae.chunk.js": "/themovies/static/js/453.dc5d1cae.chunk.js",
+    "static/media/search-icon.png": "/themovies/static/media/search-icon.317589832f07729907f3.png",
+    "static/media/star.svg": "/themovies/static/media/star.4b0da73f7dff7c38aa2516d8a08fd7e2.svg",
+    "index.html": "/themovies/index.html",
+    "static/media/spinner.svg": "/themovies/static/media/spinner.1d9f34132f9a34a0a9ad15c44a9288e1.svg",
+    "main.98061a22.js.map": "/themovies/static/js/main.98061a22.js.map",
+    "453.dc5d1cae.chunk.js.map": "/themovies/static/js/453.dc5d1cae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.98061a22.js"
+  ]
+}
