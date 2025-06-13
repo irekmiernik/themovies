@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import StyledGlobal from './styledGlobal';
 import { ThemeProvider } from 'styled-components';
@@ -19,7 +18,6 @@ root.render(
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <StyledGlobal />
-        {/* <App /> */}
         <RouterProvider router={router} />
       </ThemeProvider>
     </Provider>
