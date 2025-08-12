@@ -20,7 +20,7 @@ A modern web application that allows users to browse popular movies, view detail
 - 👥 See full cast with names and photos
 - 📖 Movie description and details page
 
-### You can try app here: [Movie-Browser]()
+### You can try app here: [Movie-Browser](https://irekmiernik.github.io/themovies/)
 
 ### 🧰 Tech Stack
 
